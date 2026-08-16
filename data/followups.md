@@ -19,6 +19,12 @@ check and where, so no item depends on rediscovering the context.
 | 11 | **Serbia, Albania, North Macedonia, Montenegro, Bosnia & Herzegovina, Moldova** | G8 CEE | **Zero coverage — not a single institutional page was opened.** Needs a dedicated pass. | G8's search allowance ran out a third of the way through 17 countries. Silence here must not be read as "nothing exists", and these are the countries where the 240-ECTS structural risk is most likely to be real. |
 | 12 | **Bulgaria** | G8 CEE | Sofia University and the other state universities. Only Sofia's Digital Marketing MA surfaced, and it is distance-format with Bulgarian-language admission rules and no published fee. | Same as above: unresolved rather than empty. |
 | 13 | **Poland, Croatia, Romania, Lithuania — second tier** | G8 CEE | Not reached: Poznań UEB, Wrocław UEB, Cracow UE, AGH, SWPS; Zagreb Faculty of Economics, ZSEM, Academy of Fine Arts Zagreb, ADU; UNATC Bucharest, Politehnica; KTU, VDU. | Coverage is substantial but explicitly not exhaustive in these four countries. |
+| 14 | **UPF — Master in Digital Culture and Emerging Media** | G6 Spain | Language of instruction. The page carries an English title, English CV/motivation requirement and a B2 English floor, but never states the teaching language. | Officially recognised UPF master. **The single most likely additional Spain Track B row** — Spain currently yields only two. |
+| 15 | **Universidad Pontificia Comillas — Máster Universitario en Análisis de Negocio / Business Analytics** | G6 Spain | Language of instruction. Official status already confirmed (BOE-A-2025-15932); the programme page was unreachable. | Second-most-likely additional Spain Track A row. |
+| 16 | **EADA, EAE, ESIC, Deusto, IED Madrid/Barcelona, Elisava, BAU, U-tad** | G6 Spain | *Oficial* vs *propio* status of any English-taught master. | **Unverified, not rejected** — the distinction is unclear from their marketing pages, which is exactly the trap the brief warns about. |
+| 17 | **Lusófona tuition** | G6 Portugal | An annual figure. The site publishes a per-ECTS rate (€11.18–12.68) and a "monthly value for 30 ECTS" (€335.40–380.40) that are mutually inconsistent; the fees pages render empty. | Four Track B rows carry `NOT_FOUND` tuition. Lusófona is the **only** Portuguese provider running English-taught DGES-registered media-production masters at scale, so these rows matter disproportionately. |
+| 18 | **Portugal post-study work permit** | G6 Portugal | Article 122.º-O terms from an official source. AIMA returned 503 repeatedly; SEF's site is retired. | `post_study_work_visa` is NOT_FOUND on all eight Portuguese rows. |
+| 19 | **ISEG, U.Porto, U.Aveiro, IPCA, ESAD, Escola Superior de Teatro e Cinema** | G6 Portugal | Not reached before the search allowance ran out. | Portuguese coverage is incomplete, particularly for Track B outside Lusófona. |
 
 ## Transcript audit — act on this early
 
@@ -68,3 +74,33 @@ than vanishing.
   perfect Track B match at €1,500/semester.
 - **Monaco** — no programme in either track; the entire IUM master portfolio is
   management/finance plus an MBA and DBA.
+
+## Additional deliberate exclusions from G6 (Spain / Portugal)
+
+- **ISCTE Business School — Master in Business Analytics** and **Master in Data
+  Science.** Non-EU tuition €5,000 year 1 / €2,500 year 2 — cheap, and an exact
+  Track A title. Excluded because ISCTE states the programmes are lectured in
+  Portuguese, with only three Data Science units deliverable in English. Worth
+  revisiting only if the applicant's Portuguese changes.
+- **ESCAC — Máster Universitario en Estudios de Cine y Culturas Visuales**
+  (Universitat de Barcelona, official, 60 ECTS, €5,200). Spain's strongest film-school
+  official master; Spanish-taught.
+- **Berklee Valencia — MM Music Production, Technology & Innovation** and the two
+  other production masters (€50,430). These are **US Berklee degrees carrying no
+  Spanish official title** — only Berklee's Global Entertainment and Music Business
+  master holds a Spanish RUCT registration, and that one is an entertainment-business
+  degree fitting neither track. Given the applicant's music-production practice this
+  is the most tempting exclusion in the dataset, and the level rule is unambiguous.
+- **Universidad de Navarra — Máster Universitario en Big Data Science.** Official,
+  but Spanish-taught *and* delivered in a Friday/Saturday executive format.
+- **Lusófona / KINO EYES — The European Movie Master** (Erasmus Mundus). Excluded
+  under the UK-partner rule: Edinburgh Napier is a consortium partner. Flagged here
+  because Wave 2's F1 agent will encounter it in the EMJMD catalogue and must apply
+  the same rule.
+
+**Structural finding — Spain Track B.** Two verified rows only, after searching in
+Spanish and Catalan across ESCAC, ECAM, UPF Communication, UPV, IED, Elisava, BAU,
+U-tad, URJC/IUNIT and Berklee Valencia. The pattern is consistent and structural:
+Spain's official media and film masters are almost all taught in Spanish or Catalan,
+and the English-taught media offer is concentrated in private schools selling
+*títulos propios*. This is a finding about the country, not a gap in the search.
