@@ -104,3 +104,44 @@ U-tad, URJC/IUNIT and Berklee Valencia. The pattern is consistent and structural
 Spain's official media and film masters are almost all taught in Spanish or Catalan,
 and the English-taught media offer is concentrated in private schools selling
 *títulos propios*. This is a finding about the country, not a gap in the search.
+
+## G4 (Nordics) follow-ups
+
+| # | Item | What to verify | Why it matters |
+|---|---|---|---|
+| 20 | **BI Norwegian Business School** accreditation | NOKUT accreditation as a specialised university institution. BI's own page says only "an independent, not-for-profit foundation". | Tagged `private` unconfirmed. MESRS equivalence depends on it and BI is a headline Track A name at NOK 135,600/yr. |
+| 21 | **Reykjavík University** accreditation + tuition | Icelandic ministry accreditation; tuition published only inside linked PDF fee schedules that the scrape could not reach. | Private, unconfirmed on both counts. |
+| 22 | **NTNU (Norway)** | Non-EEA fee page (`ntnu.edu/studies/tuition-fee`); search suggested NOK 176,300/yr for economics/social science. | The one Norwegian institution left unopened. No row created. |
+| 23 | **Luleå (LTU)** tuition | The fee table lists "Data Science" and "International Business" but has no row for Data Analytics in Business and Economics. | Recorded `NOT_FOUND` rather than inferred from a neighbouring programme. |
+| 24 | **University of Lapland — Arctic Indigenous Cinema MA** | Whether admission is open irrespective of Indigenous background. €13,000/yr with a €6,000 scholarship, 120 ECTS, English. | A genuine Track B match excluded only because eligibility could not be confirmed. |
+| 25 | **Post-study work rights, all five Nordic countries** | Official immigration-authority statements. | `post_study_work_visa` is `NOT_FOUND` on all 22 Nordic rows; the agent refused to assert terms from memory. |
+
+## Structural finding — Track B has an entry-qualification wall
+
+This is now visible across three territories and is more consequential for this
+applicant than tuition or deadlines. **Media-production masters overwhelmingly
+require a prior degree in the field, not merely a portfolio.** The applicant's
+videography and music-production practice is real but sits outside a media
+bachelor, and these are hard eligibility rules rather than preferences:
+
+- **Konstfack (SE)** — requires a Bachelor of Fine Arts; selection on artistic
+  portfolio and interview.
+- **Stockholm University of the Arts (SE)** — requires a BFA plus a degree project
+  from a Film and Media bachelor. Also the most expensive programme found anywhere
+  in the sweep: SEK 1,346,000 total.
+- **Kristiania (NO)** — 80 ECTS required within audiovisual media, storytelling,
+  visual art, design or technology.
+- **Volda (NO)** — 90 ECTS in media/journalism plus 40 ECTS of practical courses.
+- **Xamk (FI), Virtual Production** — the strongest Finnish UAS match on content;
+  restricted to Bachelor of Engineering or Bachelor of Culture and Arts holders
+  **plus two years' post-degree work experience in the field**.
+- **Le Fresnoy (FR)** — bac+5 or seven years' professional experience.
+- **La Fémis (FR)** — 4-year cursus entered at bac+2.
+
+Consequence for the shortlist: Track B candidates must be filtered on
+`quantitative_prereqs` / prior-degree subject before cost or deadline. The
+realistic Track B openings for a Business Intelligence graduate are the
+technology-and-media-hosted programmes (interaction design, media technology,
+digital media at applied-sciences universities) rather than the film and fine-art
+academies — and that distinction should drive the Track B shortlist rather than
+programme prestige.
