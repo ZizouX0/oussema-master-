@@ -145,3 +145,45 @@ technology-and-media-hosted programmes (interaction design, media technology,
 digital media at applied-sciences universities) rather than the film and fine-art
 academies — and that distinction should drive the Track B shortlist rather than
 programme prestige.
+
+## G5 (Ireland / Malta / Cyprus / Greece) follow-ups
+
+**The Cypriot private sector is an accreditation minefield — G5's most valuable
+finding.** Four programmes were rejected because their CYQAA accreditation has
+lapsed with no renewal row in the register. These look entirely normal on their own
+websites, and a degree from a programme whose accreditation expired will not pass
+MESRS equivalence:
+
+| Institution | Programme | CYQAA status |
+|---|---|---|
+| Neapolis University Pafos | MA Digital Video Production (~€3,500) | **expired Spring 2022** — was the single most on-target Track B match in Cyprus |
+| European University Cyprus | MSc Digital Media | **expired Spring 2023** |
+| The Cyprus Institute | MSc Simulation and Data Science | **expired Spring 2023** |
+| University of Nicosia | MA Digital Art and Design | runs only to **Spring 2026** — already lapsed |
+
+Each is worth a direct enquiry (accreditation may have been renewed without the
+register being updated), but none can be recorded as verified today.
+
+| # | Item | What to verify | Why it matters |
+|---|---|---|---|
+| 26 | **Greece — International Hellenic University**, Piraeus, NKUA, West Attica, Ionian University (audiovisual arts), American College of Greece / Alba | English-taught master's catalogues. IHU is a public university teaching **exclusively in English** and is likely the richest unexplored Greek source. Alba needs a UK-validation check. | Greece yields only 2 rows. The agent estimates a proper pass adds 4–8. The ministry database holds 1,368 programmes behind JS pagination and needs a crawl budget. |
+| 27 | **IADT — KinoEyes / Viewfinder joint MAs** | Consortium partner lists. KinoEyes historically includes a UK partner. | Flagged not recorded, pending partner verification. Wave 2's F1 will meet these in the EMJMD catalogue and must apply the same rule. |
+| 28 | **Post-study work rights: Malta, Cyprus, Greece** | Official third-country post-study residence rules. | Only Ireland's is verified (Stamp 1G: 12 months, renewable once to 24). The agent calls this the largest remaining gap in the territory and a real differentiator. |
+| 29 | **Neapolis — MA Digital Video Production** | Whether CYQAA accreditation was renewed after Spring 2022. | Cheapest on-target Track B programme found in the whole sweep (~€3,500). Worth one email. |
+
+**Excluded but worth reconsidering if the Track A definition is loosened:** National
+College of Ireland MSc Data Analytics (€17,000, January 2027 start, IELTS 6.0),
+Maynooth MSc Data Science and Analytics (€17,000) and MSc Digital Marketing
+(€18,000). All are QQI-accredited NFQ Level 9 awards; all were excluded only because
+they sit in a school of computing without an explicit business-analytics
+specialisation.
+
+**UK-linked exclusions applied correctly:** UCLan Cyprus (MSc Data Analytics, MSc/MA
+Graphic Design) is the Cyprus campus of a UK institution.
+
+**Irish equivalency note:** no Irish page states a rule for a Tunisian 180-ECTS
+licence. Entry text uniformly reads "NFQ Level 8 honours degree or equivalent",
+which is an individual assessment rather than a published yes/no — so `min_prior_ects`
+is `NOT_FOUND` on every Irish row and `accepts_3yr_bachelor` is `conditional`. For
+this applicant that means Ireland cannot be cleared in advance from public pages;
+it requires per-programme enquiry.
