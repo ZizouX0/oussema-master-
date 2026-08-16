@@ -227,3 +227,46 @@ These are useful negatives — they close off options that look plausible from o
   applicant.
 - **ESMT Developing Country Scholarship (LDC/LLDC)** — points at the UN LDC and LLDC
   lists; **Tunisia is on neither**, so it was correctly kept out of the dataset.
+
+## F2 (national schemes) follow-ups
+
+| # | Item | What to verify | Why it matters |
+|---|---|---|---|
+| 35 | **Government of Ireland International Education Scholarship** | The HEA domicile criterion (outside EU/EEA/CH/UK) is met, but Trinity's page refers to a separate "list of eligible countries" that is not published on the HEA site. **Chase goi-ies@hea.ie directly.** | Worth €10,000 plus a full fee waiver. Recorded `unclear` — the only unresolved national scheme of real value. |
+| 36 | **Camões (Portugal)** | Whether "Bolsas da Cooperação" extends beyond PALOP/Timor-Leste. No country list was reachable. | Portugal's only national route; not recorded. |
+| 37 | **IKY (Greece)** | Foreign-national awards run through bilateral cultural-agreement channels that could not be opened. | Greece already yields only 2 programmes; a funding route would change its weight. |
+| 38 | **Estonia** | Whether any national state scholarship for a full master's exists. `studyinestonia.ee/scholarships` returns 404. | Estonia contributes 4 Track B rows. |
+
+### National schemes confirmed CLOSED to Tunisians — do not spend effort here
+
+The negatives are as valuable as the positives, because several of these appear on
+every "scholarships for African students" listicle:
+
+- **Swedish Institute (SISGP)** — 34-country list. **Morocco and Egypt are in;
+  Tunisia is not.**
+- **Czech Government Scholarships** — 12-country list, no North Africa.
+- **VLIR-UOS ICP Connect (Belgium)** — 29 countries; only Morocco and Palestine from MENA.
+- **Latvian State Scholarships** — 39 bilateral-agreement countries; only Egypt from Africa.
+- **Lithuanian State Scholarships** — 17 countries, Tunisia absent.
+- **DAAD Study Scholarships – Master Studies for All Academic Disciplines** — Tunisia is
+  absent from the country selector **even though the funding cycle starting 1 Oct 2027
+  matches this applicant exactly**. F2 flags this as the highest-risk false positive in
+  the set: it is the scheme everyone assumes a Tunisian can use, and they cannot.
+
+### Schemes that exist but fund nothing this applicant needs
+
+- **Orange Knowledge Programme (NL)** — **ended 2024**. Nuffic now runs only short
+  courses, Erasmus+ and the NL Scholarship.
+- **Finland — no national scheme exists at all.** Study in Finland states scholarships
+  are offered by individual universities and explicitly warns against "fully funded
+  Finland government scholarship" advertising. Treat any such claim as fraudulent.
+- **Swiss Government Excellence Scholarships** — for Tunisia these cover **research
+  fellowships and PhD only** (deadline 2026-10-13 via the Swiss Embassy in Tunis). The
+  art-scholarship stream, which is the only master's-funding type, excludes Tunisia.
+- **OeAD Ernst Mach (Austria)** — funds 1–9 month research stays, not degrees.
+- **Slovak SAIA** — states explicitly that it does not support full-degree students.
+- **MAEC-AECID África-Med (Spain)** — Tunisia is listed, but applicants must be
+  permanent public employees.
+- **DAAD EPOS** — Tunisia eligible, blocked by a 2-year work-experience requirement.
+- **DAAD Fine Art/Design/Film** — Tunisia eligible, requires a first degree in the arts,
+  which is the Track B qualification wall again.
