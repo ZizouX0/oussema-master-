@@ -187,3 +187,43 @@ which is an individual assessment rather than a published yes/no — so `min_pri
 is `NOT_FOUND` on every Irish row and `accepts_3yr_bachelor` is `conditional`. For
 this applicant that means Ireland cannot be cleared in advance from public pages;
 it requires per-programme enquiry.
+
+## F4 (institution-level scholarships) follow-ups
+
+**~89 of 123 institutions were never checked.** F4 worked strictly down the priority
+order and stopped after the high-tuition tiers plus one art school. Unchecked and
+worth a second pass, in rough value order: Barcelona School of Economics, Carlos III,
+Politecnico di Milano, Ca' Foscari, Bologna, Trento, WU Vienna, USI, HSLU, ECAL/HEAD,
+LUT, Oulu, BTH, Luleå, all Belgian, all French public, all German public, all
+Czech/Polish/Romanian/Baltic/Slovenian institutions, plus the Track B schools
+(FAMU, RUFA, Piet Zwart/Rotterdam UAS, AHK, AUAS, Macromedia, MOME, PJAIT,
+ifs Köln, Filmuniversität Babelsberg, Louis-Lumière, ENSAV).
+
+| # | Item | What to verify | Why it matters |
+|---|---|---|---|
+| 30 | **Católica-Lisbon** scholarships | Fees/scholarships page returned 503 to WebFetch and empty to Firecrawl. Only the bachelor's scheme was readable. | A Track A institution with no scholarship data at all. Worth a retry. |
+| 31 | **IE Middle East & Africa Award** | The eligible-region country list renders client-side behind a "More info" control; neither WebFetch nor Firecrawl retrieved it. | Recorded `unclear`. IE tuition is among the highest in the dataset, so the answer is worth real money. |
+| 32 | **Amsterdam Merit Scholarship (UvA)** | Amounts and deadlines are devolved to each Faculty/Graduate School and not published centrally. Check Economics and Business (Track A) and Humanities (Track B) separately. | `NOT_FOUND` on value and deadline. |
+| 33 | **Frankfurt School master scholarship** | The published 15/25/50/75/100% ladder belongs to the **BSc** programme; the master's page says only "a partial amount of tuition". | Value unknown for a school charging non-EU master's fees. |
+| 34 | **UCC College of Business and Law merit scholarships** | Confirmed to exist and to be automatic, but no value, eligibility detail or deadline is published anywhere. | Recorded at `low` confidence with three `NOT_FOUND` fields. |
+
+### Institutions confirmed to offer a non-EU master's applicant nothing
+
+These are useful negatives — they close off options that look plausible from outside:
+
+- **NHH (Norway)** — states plainly that as a publicly financed institution it offers
+  no scholarships or financial support to students. Non-EU fee €18,660.
+- **Trinity College Dublin** — its Global Excellence Postgraduate Scholarship
+  **exempts** business, engineering, natural sciences and computer science/statistics.
+  Trinity's Track A programme sits in the Business School, so it is excluded.
+- **Utrecht** — Bright Minds Fellowships require an EU/EEA passport.
+- **Kozminski** — the 100% "Best Students" award covers only Management and Finance
+  and Accounting, not the Track A Big Data Science programme.
+- **Corvinus** — the full-tuition Corvinus Scholarship is limited to Management and
+  Leadership, Finance and the International MBA; none of the Corvinus rows in this
+  dataset qualify. Only the 10% early-bird discount applies.
+- **Breda UAS** — both BUas and NL Scholarship schemes are bachelor's-only.
+- **IADT** and **TU Dublin** — no institutional award for an incoming non-EU master's
+  applicant.
+- **ESMT Developing Country Scholarship (LDC/LLDC)** — points at the UN LDC and LLDC
+  lists; **Tunisia is on neither**, so it was correctly kept out of the dataset.
