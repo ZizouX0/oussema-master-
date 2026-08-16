@@ -1,0 +1,200 @@
+#!/usr/bin/env python3
+"""Write the programmes V2's coverage audit confirmed as genuine misses.
+
+Only rows V2 evidenced end-to-end go in. SEEU North Macedonia (no published
+second-cycle fee) and UNYT Albania (no programme-level ASCAL decision, plus
+unresolved Greenwich exposure) are deliberately left out and recorded in
+gaps_and_risks.md instead — recording them would repeat exactly the error the
+Cypriot accreditation findings warn about.
+"""
+import csv, os, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from merge_programmes import HEADER
+
+VD = "2026-08-16"
+NF = "NOT_FOUND"
+
+
+def row(**kw):
+    r = {k: NF for k in HEADER}
+    r["verified_date"] = VD
+    r.update(kw)
+    return [r[k] for k in HEADER]
+
+
+ROWS = [
+    # ---- GREECE (the largest single gap: 2 rows -> 7) ----
+    row(track="A", country="Greece", city="Thermi, Thessaloniki",
+        institution="International Hellenic University",
+        institution_type="public",
+        programme_name_exact="MSc in e-Business and Digital Marketing",
+        degree_awarded="MSc — Greek state postgraduate degree, HAHE/ETHAAE certified, published in the Government Gazette",
+        faculty_or_school="School of Science and Technology (UCIPS)", language="EN",
+        duration_months="18", ects="90", intake_months="October",
+        tuition_non_eu_per_year="3700 (total for the programme, no EU/non-EU differential published)",
+        tuition_source_url="https://st.ihu.gr/studies/postgraduate/ebusiness",
+        app_deadline_non_eu="2026-08-26 PRIOR_CYCLE",
+        app_deadline_source_url="https://st.ihu.gr/studies/postgraduate/ebusiness",
+        accepts_3yr_bachelor="conditional",
+        english_req="State Certificate B2 or equivalent (waived for English-medium degree holders)",
+        portfolio_required="n/a", work_experience_required="no",
+        quantitative_prereqs="Undergraduate degree in Engineering, Science, Informatics, or Economics and Business Administration",
+        programme_url="https://st.ihu.gr/studies/postgraduate/ebusiness",
+        fit_notes="Digital business and marketing analytics; fits the BI licence directly. Delivery is hybrid in-person/remote on weekday evenings, which collides with the MESRS in-person-examination criterion.",
+        confidence="high"),
+    row(track="A", country="Greece", city="Thermi, Thessaloniki",
+        institution="International Hellenic University",
+        institution_type="public", programme_name_exact="MSc in Data Science",
+        degree_awarded="MSc — Greek state postgraduate degree, HAHE/ETHAAE certified",
+        faculty_or_school="School of Science and Technology (UCIPS)", language="EN",
+        duration_months="18", ects="90", intake_months="October",
+        tuition_non_eu_per_year="3700 (total for the programme)",
+        tuition_source_url="https://st.ihu.gr/studies/postgraduate/datascience",
+        app_deadline_non_eu="2026-08-26 PRIOR_CYCLE",
+        app_deadline_source_url="https://st.ihu.gr/studies/postgraduate/datascience",
+        accepts_3yr_bachelor="conditional",
+        english_req="State Certificate B2 or equivalent",
+        portfolio_required="n/a", work_experience_required="no",
+        quantitative_prereqs="Preferably STEM; other degrees considered with a solid background in statistics/mathematics and knowledge of databases and programming",
+        programme_url="https://st.ihu.gr/studies/postgraduate/datascience",
+        fit_notes="General data science rather than business-hosted; included on the same footing as Utrecht Applied Data Science and Tilburg Data Science and Society. Hybrid delivery, same MESRS caveat as the e-Business programme.",
+        confidence="high"),
+    row(track="A", country="Greece", city="Athens",
+        institution="Athens University of Economics and Business",
+        institution_type="public", programme_name_exact="MSc in Marketing Analytics",
+        degree_awarded="MSc — Greek state postgraduate degree",
+        faculty_or_school="Department of Marketing and Communication", language="EN",
+        duration_months="15", ects="75", intake_months="September",
+        tuition_non_eu_per_year="4800 (total, full-time; part-time 5800). No non-EU differential published; figures for September 2026 entry",
+        tuition_source_url="https://www.dept.aueb.gr/en/marketinganalytics/content/tuition-fees",
+        accepts_3yr_bachelor="conditional",
+        english_req="C2 for the full-time programme (C1 part-time) — an unusually high bar",
+        portfolio_required="n/a",
+        work_experience_required="no for full-time; yes, 2 years, for part-time",
+        quantitative_prereqs="Includes a 3-month Analytics Capstone Project",
+        programme_url="https://www.dept.aueb.gr/en/marketinganalytics",
+        fit_notes="Exact-title Track A match at a public university already in the dataset for another programme. The C2 English requirement is the binding constraint, not the fee.",
+        confidence="medium"),
+    row(track="A", country="Greece", city="Athens",
+        institution="Athens University of Economics and Business",
+        institution_type="public", programme_name_exact="MSc in AI and Data Science",
+        degree_awarded="MSc — Greek state postgraduate degree",
+        faculty_or_school="Departments of Informatics and Statistics (joint)", language="EN",
+        tuition_non_eu_per_year="6000 (total; 3000 of assistantships available to full-time students, reducing the effective fee to 3000)",
+        tuition_source_url="https://www.dept.aueb.gr/en/cs/content/graduate-study-program-master-science-data-science",
+        accepts_3yr_bachelor="conditional", portfolio_required="n/a",
+        work_experience_required="no",
+        programme_url="https://datascience.aueb.gr/",
+        fit_notes="Informatics and Statistics faculty with no business stream; included on the same general-data-science footing as the Utrecht and Tilburg rows. Assistantships halve the effective cost.",
+        confidence="medium"),
+    row(track="B", country="Greece", city="Thessaloniki",
+        institution="Aristotle University of Thessaloniki",
+        institution_type="public",
+        programme_name_exact="Digital Media - Computational Intelligence",
+        degree_awarded="MSc — Greek state postgraduate degree",
+        faculty_or_school="School of Informatics", language="EN",
+        duration_months="18", ects="90",
+        tuition_non_eu_per_year="1800 (total for the programme) — the cheapest qualifying Track B programme in the dataset",
+        tuition_source_url="https://studies.minedu.gov.gr/program/?programme_id=1191",
+        accepts_3yr_bachelor="conditional", portfolio_required="no",
+        work_experience_required="no",
+        quantitative_prereqs="A degree in computer science, electrical and computer engineering, or a numerate physical science discipline — a real risk for a Business Intelligence licence and must be checked before applying",
+        programme_url="https://dmci-en.csd.auth.gr/",
+        fit_notes="Delivered in person, which matters for MESRS equivalence. Comparable to the Bauhaus-Weimar Computer Science for Digital Media row already in the dataset.",
+        confidence="high"),
+    # ---- NETHERLANDS ----
+    row(track="B", country="Netherlands", city="Leiden",
+        institution="Leiden University", institution_type="public",
+        programme_name_exact="Creative Intelligence & Technology (previously Media Technology)",
+        degree_awarded="Master of Science — programme code 60206",
+        faculty_or_school="Faculty of Science", language="EN",
+        duration_months="24", ects="120", intake_months="September, February",
+        tuition_non_eu_per_year="22500 (institutional fee 2026-2027; 2694 statutory for EU/EEA)",
+        tuition_source_url="https://www.universiteitleiden.nl/en/education/study-programmes/master/creative-intelligence--technology/admission-and-application/tuition-fees",
+        app_deadline_non_eu="2027-04-01",
+        app_deadline_source_url="https://www.universiteitleiden.nl/en/education/study-programmes/master/creative-intelligence--technology",
+        accepts_3yr_bachelor="conditional", portfolio_required="no",
+        work_experience_required="no",
+        programme_url="https://www.universiteitleiden.nl/en/education/study-programmes/master/creative-intelligence--technology",
+        fit_notes="Resolves the Media Technology question: renamed, not abolished. Markets itself as open to any prior bachelor field, which makes it one of the few Track B routes not gated on a media degree.",
+        confidence="high"),
+    row(track="A", country="Netherlands", city="Tilburg",
+        institution="TIAS School for Business and Society", institution_type="private",
+        programme_name_exact="Full-time Master in Management/Business Administration (MScBA) - Business Analytics Track",
+        degree_awarded="MSc — NVAO-accredited", language="EN", duration_months="12",
+        tuition_non_eu_per_year="28500 (total for the programme, VAT-exempt)",
+        tuition_source_url="https://www.tias.edu/en/courses/full-time-master-in-managementbusiness-administration-mscba-13453",
+        accepts_3yr_bachelor="conditional", portfolio_required="n/a",
+        work_experience_required="no",
+        programme_url="https://www.tias.edu/en/courses/full-time-master-in-managementbusiness-administration-mscba-13453",
+        fit_notes="One-year 12-month master, so it sits inside the MESRS two-year-post-licence risk band. ECTS and the non-EU deadline are not published.",
+        confidence="medium"),
+    # ---- GERMANY ----
+    row(track="A", country="Germany", city="Oestrich-Winkel / Wiesbaden",
+        institution="EBS Universitat fur Wirtschaft und Recht",
+        institution_type="private-accredited-by-state",
+        programme_name_exact="Master in Business Analytics & AI",
+        degree_awarded="Master of Science",
+        faculty_or_school="EBS Business School", language="EN",
+        duration_months="24", ects="120",
+        tuition_non_eu_per_year="33780 (total for the 4-semester track; 3000 early-enrolment reduction if enrolled by 28 February)",
+        tuition_source_url="https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-business-analytics",
+        app_deadline_non_eu="no formal deadline; visa applicants advised to apply by 30 May for an autumn start",
+        min_prior_ects="180", accepts_3yr_bachelor="yes",
+        english_req="TOEFL iBT 95 or IELTS 7.0",
+        other_tests="GMAT / GRE / BAT / EBSgrad / CAT required",
+        portfolio_required="n/a", work_experience_required="no",
+        programme_url="https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-business-analytics",
+        fit_notes="One of the few German programmes stating an explicit 180-ECTS floor in any field, which removes the DACH region's main obstacle for this applicant. The 60-ECTS accelerated track requires 240 ECTS and is closed.",
+        confidence="high"),
+    row(track="B", country="Germany", city="Berlin",
+        institution="SRH Berlin University of Applied Sciences",
+        institution_type="private-accredited-by-state",
+        programme_name_exact="M.A. Film, Television and Digital Narratives",
+        degree_awarded="Master of Arts", language="EN", duration_months="24",
+        tuition_non_eu_per_year="11900 (5950 per semester for non-EU per DAAD's International Programmes record; SRH's own marketing quotes 5700 per semester — a live fact conflict to confirm with the school)",
+        tuition_source_url="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7011/",
+        app_deadline_non_eu="none published; rolling",
+        accepts_3yr_bachelor="conditional", english_req="B2",
+        portfolio_required="yes", work_experience_required="no",
+        quantitative_prereqs="Portfolio of five to eight pieces of film work (films, screenplays, exposes or film analyses) plus a list of five favourite films/series",
+        programme_url="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7011/",
+        fit_notes="The only Track B programme found in the entire operation that admits on portfolio rather than a prior degree in the field, which makes it one of the very few genuinely open to this applicant's videography practice.",
+        confidence="medium"),
+    # ---- SWITZERLAND ----
+    row(track="B", country="Switzerland", city="Zurich",
+        institution="Zurcher Hochschule der Kunste (ZHdK)",
+        institution_type="applied-sciences",
+        programme_name_exact="MA Design, Major Interaction Design",
+        degree_awarded="Master of Arts in Design", language="EN",
+        duration_months="24", ects="120", intake_months="September",
+        tuition_non_eu_per_year="2440 CHF (1220 CHF per semester for non-Swiss; 720 CHF per semester Swiss)",
+        tuition_source_url="https://www.zhdk.ch/en/degree-programmes/design/ma-design-interaction-design",
+        app_deadline_non_eu="2027-02-27 (2026 date was 27 February; expect late February 2027)",
+        accepts_3yr_bachelor="conditional", portfolio_required="yes",
+        work_experience_required="no",
+        programme_url="https://www.zhdk.ch/en/degree-programmes/design/ma-design-interaction-design",
+        fit_notes="Resolves the ZHdK question: this major is explicitly English-taught. ZHdK's six MA Film majors publish in German and are treated as German-taught. Very low fee for Switzerland.",
+        confidence="high"),
+    # ---- MOLDOVA (the only find across six zero-coverage countries) ----
+    row(track="A", country="Moldova", city="Chisinau",
+        institution="Technical University of Moldova", institution_type="public",
+        programme_name_exact="Master's degree, Data Science", degree_awarded="Master",
+        language="EN", duration_months="24", ects="120",
+        tuition_non_eu_per_year="3000 (stated for 2026-2027; admission fee 100. Excludes legalisation, residence permit and medical insurance)",
+        tuition_source_url="https://international.utm.md/tuition-fees/",
+        accepts_3yr_bachelor="conditional", portfolio_required="n/a",
+        work_experience_required="no",
+        programme_url="https://international.utm.md/tuition-fees/",
+        fit_notes="Satisfies the MESRS two-year/120-ECTS reading at 3000 EUR a year, among the cheapest qualifying programmes anywhere in the dataset. ANACEC programme-level accreditation was not opened and should be confirmed.",
+        confidence="medium"),
+]
+
+dest = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                    "data", "programmes_G9-V2.csv")
+with open(dest, "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
+    w.writerow(HEADER)
+    w.writerows(ROWS)
+print(f"wrote {len(ROWS)} rows to {dest}")
