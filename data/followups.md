@@ -270,3 +270,129 @@ every "scholarships for African students" listicle:
 - **DAAD EPOS** — Tunisia eligible, blocked by a 2-year work-experience requirement.
 - **DAAD Fine Art/Design/Film** — Tunisia eligible, requires a first degree in the arts,
   which is the Track B qualification wall again.
+
+## F3 (Tunisian side) — the finding that outranks everything else
+
+**MESRS equivalence may reject a one-year master's.** The governing text is the
+*arrêté* of 10 October 2023 (JORT n°119, 17 Oct 2023, p. 5544). Articles 8 and 9,
+covering equivalence to the Tunisian *Mastère professionnel* and *Mastère de
+recherche*, require a licence holder to have **"successfully completed two years of
+study after the licence"**, and each closes with **"in all cases, equivalence is
+granted to whoever has successfully completed not less than five (5) years of
+university study."**
+
+A 60-ECTS one-year European master's on a 3-year licence yields four years total and
+one year post-licence. **On the face of the arrêté that does not satisfy Article 8 or 9.**
+A 120-ECTS two-year master's yields five years and does.
+
+**Measured exposure across the 168-programme dataset: 51 rows (30%) are at risk.**
+
+| Country | At-risk rows | Note |
+|---|---|---|
+| **Ireland** | **15 of 15** | Every Irish row. The entire territory is one-year taught masters. |
+| **Netherlands** | 11 of 16 | |
+| **Spain** | 7 of 7 | |
+| Cyprus | 3 of 4 | |
+| Greece, Iceland, Malta | all rows | |
+| Poland, Hungary, Sweden, Germany, Portugal, France | 1–2 each | |
+
+111 rows (66%) satisfy the two-year rule; 6 cannot be assessed because both
+`duration_months` and `ects` are NOT_FOUND.
+
+**Status of this finding: it is F3's reading of the statutory text, not a ruling from
+the commission.** It must be confirmed in writing with the Direction de
+l'Enseignement Supérieur Privé et des Équivalences before it is treated as settled.
+But it cannot be ignored, because if correct it removes Ireland — the single richest
+English-taught source in the dataset — from consideration for anyone who needs the
+degree recognised in Tunisia.
+
+**It only binds if the applicant needs Tunisian recognition** — for the public
+sector, a regulated profession, a doctorate, or any *concours*. A graduate who stays
+in Europe is unaffected. This makes the applicant's post-study intention the single
+highest-value unresolved question in the whole brief, ahead of budget and funding
+posture.
+
+### Three further equivalence criteria that bite (arrêté art. 2)
+
+- **Examinations must be held in person** ("الصبغة الحضورية للامتحانات") — distance or
+  hybrid-assessed programmes are at risk. This retrospectively justifies excluding
+  TU Dublin's online MSc and EUC's distance programmes.
+- **The programme must not be designed specifically for foreign students** — a real
+  hazard for fee-driven international master's.
+- **Both institution and diploma must be recognised in the awarding country** — this
+  is exactly the check that kills *máster propio*, *Mastère Spécialisé* and the lapsed
+  Cypriot accreditations.
+
+### Equivalence procedure and timing (for the deadline calendar)
+
+Since 1 August 2023: complete the form at **equivalence.rnu.tn**, print it, assemble
+the dossier, and send it **exclusively by registered post with acknowledgement of
+receipt** to the Direction de l'Enseignement Supérieur Privé et des Équivalences,
+Avenue Ouled Haffouz, 1030 Tunis. **Incomplete files are not examined at all.**
+
+Required: certified copies of the baccalauréat and every diploma in sequence,
+legalised by both Tunisian and foreign authorities; certified transcripts and credit
+counts; the mémoire/PFE; **proof that examinations were held in person**; sworn
+translations for anything not in Arabic, French or English.
+
+**No official processing time is published.** The only figure found is 2–6 months,
+from a non-official source. Plan a minimum of one full academic term between
+graduating abroad and holding a usable *attestation d'équivalence* — and note that
+legalisation by the awarding country's ministry must happen **before** posting, which
+is itself a multi-week step to arrange while still on site in Europe.
+
+## Tunisian state funding — what MESRS actually offers
+
+**Bourse universitaire à l'étranger (Mastère/Doctorat)** is real and covers Europe:
+**€800/month in the EU — €600 grant plus €200 loan repayable over ten years** — plus
+tuition, social cover, health insurance, study permit and transport. It requires a
+signed undertaking to return to Tunisia and a *caution solidaire* from a guarantor.
+
+**Timing, and it is early:** the 2026-27 circulaire was published 24 October 2025 with
+results on 30 January 2026. Expect the 2027-28 call around **October 2026 with results
+in late January 2027** — before most European deadlines and well before graduation.
+
+**Selection is not by direct application.** The home institution nominates its
+*étudiants premiers/lauréats* in the specialisations named in the annual circulaire;
+then psychological tests, a written and oral language test, ranking by points, oral
+examination before professor panels, and a decision by the Commission Nationale des
+Bourses à l'Étranger. UTM adds: degree obtained one or two years earlier, no more than
+one repeated year, average ≥ 12/20.
+
+| # | Item | What to verify | Why it matters |
+|---|---|---|---|
+| 39 | **Whether Esprit students can be nominated for the MESRS bourse** | Call DGAE directly. The entire procedure is written around public universities, and the *bourse d'alternance* variant is expressly limited to students of *établissements universitaires publics*. | **Esprit is private.** If private-institution students cannot be nominated, the main Tunisian state funding route is closed and this must be known before October 2026. |
+| 40 | **MESRS equivalence rule, in writing** | Direction de l'Enseignement Supérieur Privé et des Équivalences — whether a 60-ECTS one-year master's on a 3-year licence satisfies arts. 8/9. | Decides whether 51 of 168 programmes are usable. The highest-leverage question in the project. |
+| 41 | **Bourse call date conflict** | best.rnu.tn's timeline says October; Université de Tunis El Manar's page says the call appears in February. | Recorded `NOT_FOUND` rather than guessing. A six-month error here is fatal. |
+| 42 | **Swiss Art Scholarship country list** | Published from **August 2026**. Only Swiss instrument funding an initial master's; relevant to Track B. | Recheck after 2026-08-20 — that is now. |
+| 43 | **IsDB-France (200 excellence scholarships, 12 to Tunisia, €700/mo)** | Whether it still exists. Only surviving page describes 2020/21; the Campus France Tunisie equivalent 404s; absent from IsDB's 2026-27 list. | Would be directly on-target if live. |
+
+### Ruled out for Tunisians — with the clause, so nobody re-checks them
+
+- **IsDB M.Sc. programme** — double exclusion: restricted to the **20 Least Developed
+  member countries** (Tunisia is a member but not an LDMC) *and* requires study at a
+  university **in an IsDB member country**. Europe does not qualify.
+- **Aga Khan Foundation ISP** — Tunisia not on the country list.
+- **Mo Ibrahim Foundation** — African nationals qualify, but both awards are held in
+  the **UK**, which the brief excludes.
+- **Said Foundation** — Syria/Jordan/Lebanon/Palestine, UK only.
+- **Fondation Hassan II** — **Morocco-only**, as suspected. Do not carry forward.
+- **AMIDEAST Tunisia** — active but **entirely US-facing** (Fulbright, J-1, Study in
+  the USA). No EU scheme.
+- **AFD** — funds system reform (ELIFE, PRIMEA/EFOR). No individual student instrument.
+- **World Bank** — PromESsE and its successor fund institutions; the only mobility
+  window, PAQ-MOBIDOC, is **doctoral and post-doctoral only**.
+- **Arab Fund (AFESD)** — fellowship is for **PhD holders**.
+- **Fondation Rambourg** — arts and culture inside Tunisia, plus an endowment at
+  Columbia (USA).
+- **ARES (Belgium)** — Tunisia is a partner country, but eligibility requires permanent
+  residence and employment in Tunisia **plus two years' professional experience after
+  graduation**. A 2027 graduate does not qualify.
+- **French government schemes** — *grandes écoles* (CPGE entrants only),
+  *Ingénieur-Ingénieur* (bac+4 engineering), *partenariales M2 recherche* (requires
+  already being in a Tunisian M1). **None is open to a licence holder applying from
+  outside.** Eiffel is, but is submitted **exclusively by the French institution** — it
+  must be negotiated with the host's international office alongside admission.
+- **Tunisian diaspora and professional-association funds** — searched in French and
+  Arabic (ATUGE, Fondation BIAT, Tunisian-American associations). **Nothing found.**
+  F3 reports this as a genuine absence, not a search gap.

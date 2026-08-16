@@ -83,8 +83,10 @@ def main():
         print(f"  {agent}: {per_source[agent]} rows")
     elig = {}
     for r in out:
-        elig[r["tunisia_eligible"].lower() or "blank"] = elig.get(r["tunisia_eligible"].lower() or "blank", 0) + 1
-    print("\ntunisia_eligible breakdown:", elig)
+        # agents cite the full eligibility clause in this field, so key on the verdict only
+        verdict = re.split(r"[\s—-]", r["tunisia_eligible"].strip().lower(), 1)[0] or "blank"
+        elig[verdict] = elig.get(verdict, 0) + 1
+    print("\ntunisia_eligible:", elig)
     print(f"\nwrote {dest}")
 
 
