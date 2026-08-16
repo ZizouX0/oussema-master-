@@ -1,6 +1,6 @@
 # Funding map
 
-106 schemes examined: **87 open to a Tunisian applicant**, 6 unresolved, 13 confirmed closed.
+103 schemes examined: **84 open to a Tunisian applicant**, 6 unresolved, 13 confirmed closed.
 
 Every eligibility verdict here was reached by opening the scheme's own country list or
 eligibility clause. None is inferred from a scheme describing itself as open to
@@ -131,7 +131,7 @@ planning around it.**
 | **IE High Potential Award** — IE University | partial | NOT_FOUND (amount varies with the candidate's merit and available funding at the time of admission) | NOT_FOUND | Automatic - all candidates are considered by applying for admission; recipients are notified with the admission offer | apply via university (no financial aid application required) |
 | **UCC College of Business and Law Merit Based Scholarships 2026/27** — University College Cork | partial | NOT_FOUND (value not published on the UCC international scholarships table) | NOT_FOUND | Automatic - awarded on the basis of the programme application/offer without a separate scholarship application | apply via university (automatic) |
 
-## Bilateral and third-party (10)
+## Bilateral and third-party (7)
 
 | Scheme | Covers | Amount /yr | Deadline | Sequencing | Route |
 |---|---|---|---|---|---|
@@ -139,12 +139,9 @@ planning around it.**
 | **Stipendium Hungaricum Scholarship Programme** — Government of Hungary — Ministry of Foreign Affairs and Trade / Tempus Public Foundation | tuition+stipend | 2520 (HUF 43,700/month stipend = cca EUR 110 + HUF 40,000/month accommodation contribution = cca EUR 100; source's own EUR conversion at 13 Oct 2025 rate) PRIOR_CYCLE | 2026-01-15 PRIOR_CYCLE | before university application — the SH application IS the admission application; applicants pick up to 2 programmes in the SH system and institutions run the entrance procedure afterwards | apply direct + via home ministry — simultaneous submission to Tempus Public Foundation online AND to the Tunisian Sending Partner (the ministry responsible for higher education), which must nominate the applicant |
 | **Becas MAEC-AECID — Programa África-Med Máster** — Agencia Española de Cooperación Internacional para el Desarrollo (AECID), Spanish Ministry of Foreign Affairs | partial | NOT_FOUND (the call refers to a 'mensualidad' plus health insurance in Spain but publishes no figure on this page) | 2026-07-15 PRIOR_CYCLE | after university application — admission to the master's must already be held when applying | apply direct — AECID Sede Electrónica (electronic registry) |
 | **Borse di studio offerte dal Governo italiano a studenti stranieri e italiani residenti all'estero (IRE)** — Ministero degli Affari Esteri e della Cooperazione Internazionale (MAECI), Italy | tuition+stipend | NOT_FOUND | 2026-03-26 PRIOR_CYCLE | before university application | apply direct (Study in Italy portal) |
-| **Bourses de formations internationales 2027-2028** — Academie de Recherche et d'Enseignement Superieur (ARES), Federation Wallonie-Bruxelles, Belgium | tuition+stipend | NOT_FOUND | 2026-09-18 | before university application | apply direct (ARES GIRAF platform) |
 | **Bourses de formations internationales ARES 2027-2028** — Académie de recherche et d'enseignement supérieur (ARES), Belgium — Belgian development cooperation | tuition+stipend | NOT_FOUND (the call lists the covered items — international travel, living allowance, visa fees, registration fees, insurance — but publishes no monthly figure on this page) | 2026-09-18 | before university application — the ARES application is the route into the programme; ARES handles placement in the master de spécialisation | apply direct — ARES GIRAF platform |
-| **Government Scholarships Programme Tunesia** — Ministere de l'Enseignement Superieur et de la Recherche Scientifique (Tunisia); listed and administered through DAAD | tuition+stipend | NOT_FOUND | NOT_FOUND | before university application | via home ministry |
 | **Government Scholarships Programme Tunisia** — Ministère de l'Enseignement Supérieur et de la Recherche Scientifique (MESRS), Tunisia — listed and supported by DAAD | tuition+stipend | NOT_FOUND (source lists the benefit categories but no figures) | NOT_FOUND | NOT_FOUND — awarding is by MESRS, ahead of German university admission | via home ministry — Ministère de l'Enseignement Supérieur et de la Recherche Scientifique, Tunis; DAAD Regional Office Tunis (info@daad.tn) advises |
 | **Programme de bourses d'etudes Ingenieur-Ingenieur du Gouvernement francais** — Gouvernement francais / Institut francais de Tunisie, with MESRS | partial | NOT_FOUND | NOT_FOUND | after university application | apply direct (Institut francais de Tunisie) |
-| **Stipendium Hungaricum** — Tempus Public Foundation / Government of Hungary, under a bilateral education agreement with Tunisia | tuition+stipend | NOT_FOUND | 2026-01-15 PRIOR_CYCLE | the scholarship application IS the university application (DreamApply) - the parallel MESRS nomination file is due on the same date | apply direct (DreamApply) and via home ministry (MESRS nomination) |
 
 ---
 
