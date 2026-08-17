@@ -146,6 +146,8 @@ P_COLS = [
     ("english_req", "English requirement", 24), ("other_tests", "Other tests", 14),
     ("portfolio_required", "Portfolio", 10),
     ("quantitative_prereqs", "Quantitative prerequisites", 34),
+    ("entry_requirement_note", "Entry requirement — actual wording", 52),
+    ("entry_requirement_source_url", "Entry req. source", 30),
     ("post_study_work_visa", "Post-study work", 22),
     ("fit_notes", "Fit notes", 40), ("confidence", "Confidence", 11),
     ("programme_url", "Programme URL", 30), ("tuition_source_url", "Tuition source", 30),
@@ -157,7 +159,7 @@ for r in progs:
     r["_tuition_num"] = eur(r.get("tuition_non_eu_per_year"))
     ws.append([r.get(c[0]) for c in P_COLS])
 style_sheet(ws, len(P_COLS), len(progs), [c[2] for c in P_COLS],
-            wrap_cols={6, 7, 13, 17, 20, 22})
+            wrap_cols={6, 7, 13, 17, 20, 21, 24})
 idx = {c[0]: i + 1 for i, c in enumerate(P_COLS)}
 for row in range(2, len(progs) + 2):
     for key, fill_map in (
@@ -169,7 +171,7 @@ for row in range(2, len(progs) + 2):
         fill = fill_map.get(str(cell.value))
         if fill:
             cell.fill = fill
-    for key in ("programme_url", "tuition_source_url"):
+    for key in ("programme_url", "tuition_source_url", "entry_requirement_source_url"):
         cell = ws.cell(row=row, column=idx[key])
         if isinstance(cell.value, str) and cell.value.startswith("http"):
             cell.hyperlink = cell.value

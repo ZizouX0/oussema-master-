@@ -21,6 +21,8 @@ DOCS = [
     (os.path.join(OUT, "deadline_calendar.md"), "Deadline calendar"),
     (os.path.join(OUT, "verification_report.md"), "Verification report (V1, adversarial)"),
     (os.path.join(OUT, "coverage_audit.md"), "Coverage audit (V2, adversarial)"),
+    (os.path.join(ROOT, "data", "transcript_audit.md"),
+     "Transcript audit — entry requirements, subject credits and blockers"),
     (os.path.join(ROOT, "data", "followups.md"), "Follow-up queue"),
     (os.path.join(ROOT, "data", "BRIEF.md"), "Research brief (what every agent was told)"),
     (os.path.join(ROOT, "data", "institutions.md"), "Institutions surfaced"),

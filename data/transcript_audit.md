@@ -120,3 +120,70 @@ which is the opposite of every other risk on this page.
 - **IAD (Belgium).** The full official programme guide contains **no** credit figure.
   The French-Community 180-credit decree would apply in principle, but IAD does not
   state it.
+
+---
+
+# Germany, Switzerland, France, Iberia — the hard numbers
+
+This is the only territory that publishes credit floors in bulk, and the news is
+mostly good.
+
+## Confirmed exclusions and make-up obligations
+
+| Institution / programme | Floor | What it means for a 180-ECTS licence |
+|---|---|---|
+| **Dauphine-PSL — M2 Big Data / Data-Driven** | **240** | **HARD EXCLUSION.** "Students who have completed a BAC+4 degree (a four-year degree worth 240 ECTS credits)". Dauphine's own page says bachelor holders should apply to **Master 1** instead — that is the viable route, and it costs a year |
+| **HEC Liège — ingénieur de gestion** | **240** | Conditional; the 240 figure comes from the programme's own access rules |
+| **TH Köln (Cologne Game Lab) — Digital Games** | **210** | Admissible but conditional: 180-ECTS holders "may only be offered conditional admission" and must obtain **an additional 30 ECTS while enrolled**, stacked on a 90-ECTS master |
+| **Hochschule Rhein-Waal — Design and Interaction** | **210** | 180 accepted only with make-up examinations |
+| **IÉSEG** | 180 | Not an exclusion, but 180-ECTS holders are **locked into the Regular Track**; the Fast Track needs 240. Costs about €3,000 more and a longer programme |
+| **Macromedia** | 180 | Structural rather than a barrier: 210 ECTS → a 3-semester master, **180 ECTS → a 4-semester 120-ECTS master**. The shortfall is absorbed by a longer degree |
+| **Bauhaus-Universität Weimar** | none published | The examination board may impose *Zusatzleistungen*. The real risk is subject-specific: roughly **90 ECTS of maths and computer science** (min 15 maths, 45 CS) — demanding for a BI licence |
+| **University of Geneva** | 180 | Minor *Auflage*: at most **6 ECTS** of co-requisite bachelor coursework inside semester 1. Trivial by comparison |
+
+## The cleanest confirmations in the dataset
+
+- **University of Münster** — the *Zugangs- und Zulassungsordnung* fixes access at
+  *"eine Regelstudienzeit von mindestens sechs Semestern"* (= 180 ECTS), plus 72 LP
+  across quantitative methods, computer science, information systems and business
+  administration, and 24 LP in the chosen major.
+- **University of Cologne** — accepts 180 with a two-option subject rule: either
+  30 ECTS BWL/VWL plus 24 ECTS quantitative, or 48 ECTS quantitative.
+
+Both are tuition-free. Between them they are the strongest verified Track A entries in
+Germany for a 180-ECTS holder.
+
+## Positively met rather than merely silent
+
+**Esade, UPF, IE and X-HEC** publish no credit floor, but their stated criterion is
+whether the degree *"entitles you to undertake postgraduate studies in the
+degree-granting country"* — which a Tunisian Licence does. These are recorded `yes`
+on the basis of that clause, not inferred from silence.
+
+## A non-credit barrier that outranks every number here
+
+**Filmuniversität Babelsberg requires DSH-1 German** from applicants who did not obtain
+their school-leaving qualification at a German-language institution — despite the
+English-language programme description. For this applicant that matters more than any
+credit count.
+
+## Provenance warnings
+
+- **ECAL and HEAD**: the 180 figure comes from the governing HES-SO regulation, not the
+  schools' own pages, which state no number. Those rows cite HES-SO as the source.
+- **ZHdK**: a third-party claim that 180-credit holders must make up credits could
+  **not** be substantiated — no such clause exists in RO §19–24 or the MA Design
+  Studienordnung.
+
+## Two fabricated quotes caught during this pass
+
+Both by agents checking a summariser against the original document:
+
+1. A page summariser returned *"Bachelor-Abschluss … mit mindestens 180 ECTS-Punkten"*
+   for the Bauhaus-Weimar *Studienordnung*. **That wording is not in the document** —
+   the agent extracted the PDF itself and §2 contains no credit figure.
+2. A WebFetch summarisation claimed *"180 crédits"* appeared in IAD's programme guide.
+   The agent read the full four-page original and found no credit figure anywhere.
+
+Treat any PDF-derived quotation in this dataset as carrying that risk. Where a number
+matters to a decision, open the source PDF yourself — every row now carries the URL.
