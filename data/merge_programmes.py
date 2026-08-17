@@ -21,6 +21,9 @@ HEADER = [
     "english_req", "other_tests", "portfolio_required", "work_experience_required",
     "quantitative_prereqs", "programme_url", "post_study_work_visa", "fit_notes",
     "verified_date", "confidence",
+    # Added after Wave 1: most institutions state their entry bar in words rather
+    # than credits, so min_prior_ects alone loses the answer.
+    "entry_requirement_note", "entry_requirement_source_url",
 ]
 
 NOISE = re.compile(
