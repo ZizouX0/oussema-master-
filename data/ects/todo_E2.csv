@@ -1,0 +1,27 @@
+country,institution,programme_name_exact,degree_awarded,ects,programme_url,current_accepts_3yr
+Cyprus,University of Limassol (formerly CIIM),MSc in Business Intelligence and Data Analytics,"MSc, accredited by CYQAA (Cyprus Agency of Quality Assurance and Accreditation) to Spring Semester 2027 and recognised by KYSATS",90,https://www.uol.ac.cy/en/program/msc-bida-program,conditional
+Cyprus,American University of Beirut - Mediterraneo (AUB Mediterraneo),Master of Science in Business Analytics (MSBA),"MS, accredited by CYQAA to Spring Semester 2028",90,https://www.aubmed.ac.cy/Pages/Master-of-Science-in-Business-Analytics.aspx,NOT_FOUND
+Greece,International Hellenic University,MSc in e-Business and Digital Marketing,"MSc — Greek state postgraduate degree, HAHE/ETHAAE certified, published in the Government Gazette",90,https://st.ihu.gr/studies/postgraduate/ebusiness,conditional
+Greece,International Hellenic University,MSc in Data Science,"MSc — Greek state postgraduate degree, HAHE/ETHAAE certified",90,https://st.ihu.gr/studies/postgraduate/datascience,conditional
+Greece,Athens University of Economics and Business,MSc in Marketing Analytics,MSc — Greek state postgraduate degree,75,https://www.dept.aueb.gr/en/marketinganalytics,conditional
+Greece,Athens University of Economics and Business,MSc in AI and Data Science,MSc — Greek state postgraduate degree,NOT_FOUND,https://datascience.aueb.gr/,conditional
+Greece,Athens University of Economics and Business,MSc in Business Analytics,"MSc (Greek state postgraduate programme, PMS)",NOT_FOUND,https://www.dept.aueb.gr/en/analytics,NOT_FOUND
+Ireland,Dublin Business School,Master of Science (MSc) in Business Analytics,"MSc, NFQ Level 9 (QQI-accredited private college)",90,https://www.dbs.ie/course/postgraduate/master-of-science-(msc)-in-business-analytics,NOT_FOUND
+Ireland,Maynooth University,MSc BUSINESS ANALYTICS (MH48D),"MSc, NFQ Level 9 Taught Masters",NOT_FOUND,https://www.maynoothuniversity.ie/study-maynooth/postgraduate-studies/courses/msc-business-analytics,conditional
+Ireland,University of Limerick,Business Analytics - MSc,"MSc, NFQ Level 9 Major",NOT_FOUND,https://www.ul.ie/study/postgraduate/business-analytics-msc,conditional
+Ireland,University of Galway,Business Analytics (MSc),"MSc, NFQ Level 9",90,https://www.universityofgalway.ie/courses/taught-postgraduate-courses/business-analytics.html,conditional
+Ireland,University College Cork,MSc Business Analytics (CKL51),"MSc, NFQ Level 9",90,https://www.ucc.ie/en/ckl51/,conditional
+Ireland,Dublin City University,MSc in Business Analytics and Artificial Intelligence,"MSc, NFQ Level 9",NOT_FOUND,https://business.dcu.ie/course/msc-in-business-analytics/,NOT_FOUND
+Ireland,Trinity College Dublin,Business Analytics and AI for Management (M.Sc.),"MSc, NFQ Level 9",90,https://www.tcd.ie/courses/postgraduate/courses/business-analytics-and-ai-for-management-msc/,NOT_FOUND
+Ireland,University College Dublin,Business Analytics (MSc) FT - B154,"MSc, NFQ Level 9 (Irish National Framework of Qualifications)",90,https://www.ucd.ie/courses/b154,conditional
+Cyprus,University of Nicosia,"Digital Media and Communications (MA, 1.5 Years or 3 Semesters)","Master of Arts, 2nd cycle; accredited by CYQAA to Fall Semester 2027",90,https://www.unic.ac.cy/digital-media-and-communicationsma-1-5-years-or-3-semesters/,conditional
+Cyprus,Cyprus University of Technology,MSc Interaction Design (joint programme with Tallinn University),"MSc, accredited by CYQAA to Spring Semester 2027",120,https://www.cut.ac.cy/studies/masters/master-programmes/mga-gr-ide/,conditional
+Greece,Aristotle University of Thessaloniki,Digital Media - Computational Intelligence,MSc — Greek state postgraduate degree,90,https://dmci-en.csd.auth.gr/,conditional
+Greece,Aristotle University of Thessaloniki,"MA in Digital Media, Communication and Journalism","MA (Greek state postgraduate programme, PMS)",90,https://media.jour.auth.gr/,NOT_FOUND
+Ireland,"Institute of Art, Design + Technology (IADT)",MA in Media Narratives (DL929),"MA, NFQ Level 9",90,https://iadt.ie/courses/media-narratives/,conditional
+Ireland,"Institute of Art, Design + Technology (IADT)",MA Animation (DL931),"MA, NFQ Level 9",90,https://iadt.ie/courses/ma-animation/,conditional
+Ireland,"Institute of Art, Design + Technology (IADT)",MA in Screenwriting for Film + Television,"MA, NFQ Level 9",NOT_FOUND,https://iadt.ie/courses/screenwriting-for-film-and-television/,conditional
+Ireland,Maynooth University,MA CRITICAL AND CREATIVE MEDIA (MHS58),"MA, NFQ Level 9 Taught Masters",NOT_FOUND,https://www.maynoothuniversity.ie/study-maynooth/postgraduate-studies/courses/ma-critical-and-creative-media,conditional
+Ireland,University College Cork,MA Film & Screen Media (CKE02),"MA, NFQ Level 9",90,https://www.ucc.ie/en/cke02/,conditional
+Ireland,University of Galway,Film Studies: Theory and Practice (MA),"MA, NFQ Level 9",90,https://www.universityofgalway.ie/courses/taught-postgraduate-courses/film-studies.html,conditional
+Ireland,Technological University Dublin,Master of Science in Creative Digital Media (Creative Digital Media and UX) - TU294,"MSc, NFQ Level 9",90,https://www.tudublin.ie/study/postgraduate/courses/creative-digital-media/,conditional

@@ -1,0 +1,21 @@
+country,institution,programme_name_exact,degree_awarded,ects,programme_url,current_accepts_3yr
+Croatia,Algebra Bernays University,Data Science,"Data Science specialisation of the Professional Graduate Study Programme in Applied Computer Engineering; academic title mag. ing. comp. (Professional Master in Computer Engineering, sub-specialization in Data Science)",120,https://www.algebra.hr/sveuciliste/en/graduate-study-programmes/data-science/,NOT_FOUND
+Croatia,Algebra Bernays University,Digital Marketing,Graduate Study Programme - Digital Marketing,NOT_FOUND,https://www.algebra.hr/sveuciliste/en/graduate-study-programmes/digital-marketing/,NOT_FOUND
+Croatia,Algebra Bernays University,Economics of Digital Business,Graduate Study Programme - Economics of Digital Business,NOT_FOUND,https://www.algebra.hr/sveuciliste/en/graduate-study-programmes/economics-of-digital-business/,NOT_FOUND
+Hungary,Corvinus University of Budapest,Business Informatics,MSc,120,https://www.uni-corvinus.hu/post/landing-page/masters/msc-in-business-informatics/?lang=en,conditional
+Hungary,Corvinus University of Budapest,Artificial Intelligence in Business,MSc,60,https://www.uni-corvinus.hu/post/landing-page/masters/msc-in-artificial-intelligence-in-business/?lang=en,conditional
+Hungary,Corvinus University of Budapest,Social Data Science,MSc,60,https://www.uni-corvinus.hu/post/landing-page/masters/msc-in-social-data-science/?lang=en,conditional
+Moldova,Technical University of Moldova,"Master's degree, Data Science",Master,120,https://international.utm.md/tuition-fees/,conditional
+Czechia,Academy of Performing Arts in Prague - Film and TV School (FAMU),Photography (MA),MgA. (Master of Arts),NOT_FOUND,https://www.famu.cz/en/applicants/masters-study-programs/,NOT_FOUND
+Czechia,Academy of Performing Arts in Prague - Film and TV School (FAMU),Montage (MA),MgA. (Master of Arts),NOT_FOUND,https://www.famu.cz/en/applicants/masters-study-programs/,NOT_FOUND
+Czechia,Academy of Performing Arts in Prague - Film and TV School (FAMU),Cinematography (MA),MgA. (Master of Arts),NOT_FOUND,https://www.famu.cz/en/applicants/masters-study-programs/,NOT_FOUND
+Czechia,Academy of Performing Arts in Prague - Film and TV School (FAMU),Directing Cinema and Digital Media (MA),MgA. (Master of Arts),NOT_FOUND,https://www.famu.cz/en/applicants/masters-study-programs/,NOT_FOUND
+Estonia,Estonian Academy of Arts (EKA),Animation MA,MA,120,https://www.artun.ee/en/curricula/animation/,yes
+Estonia,Estonian Academy of Arts (EKA),Interaction Design MA,MA,120,https://www.artun.ee/en/curricula/interaction-design/,yes
+Estonia,Tallinn University,Documentary Film,Master's degree,NOT_FOUND,https://www.tlu.ee/en/bfm/documentary-film,yes
+Estonia,Tallinn University,Communication Management,Master's degree,NOT_FOUND,https://www.tlu.ee/en/bfm/communication-management,yes
+Hungary,Corvinus University of Budapest,Communication and Media Studies,MA,120,https://www.uni-corvinus.hu/post/landing-page/masters/ma-in-communication-and-media-studies/?lang=en,conditional
+Hungary,Moholy-Nagy University of Art and Design (MOME),Animation MA in English,MA degree,NOT_FOUND,https://mome.hu/en/programmes/animation-ma-in-english,yes
+Hungary,Moholy-Nagy University of Art and Design (MOME),Interaction Design MA in English,MA degree,NOT_FOUND,https://mome.hu/en/programmes/interaction-design-ma-in-english,yes
+Hungary,Moholy-Nagy University of Art and Design (MOME),Photography MA in English,MA degree,NOT_FOUND,https://mome.hu/en/programmes/photography-ma-in-english,yes
+Poland,Polish-Japanese Academy of Information Technology (PJAIT/PJATK),"Graphic Design and Multimedia Art (second-cycle, full-time, English-language)","Master's degree, second-cycle",NOT_FOUND,https://pja.edu.pl/en/projektowanie-graficzne-i-sztuka-multimediow/projektowanie-graficzne-i-sztuka-multimediow-studia-ii-stopnia-stacjonarne-anglojezyczne/o-kierunku/,NOT_FOUND
