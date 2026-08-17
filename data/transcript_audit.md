@@ -69,3 +69,54 @@ not carry, however technical it felt to study.
 
 E4 checked its whole territory for further recency rules and found none, so these two
 appear to be the exceptions rather than a regional pattern.
+
+---
+
+# Benelux — where a 180-ECTS licence is blocked or bridged
+
+Dutch and Flemish institutions almost never state a credit total. They state
+**level comparability** ("comparable in level with an academic bachelor obtained at a
+Dutch research university") or **subject credits**. Both are harder to satisfy than a
+number, and two of them turn on facts about Esprit rather than about you.
+
+## Two exclusions that depend on how Esprit is classified
+
+| Institution | The clause | Why it matters |
+|---|---|---|
+| **UCLouvain** | *"Professional degrees are not accepted even when they are delivered by a recognized academic institution."* Also requires the awarding institution to be UNESCO/WHED- or AUF-recognised **and** the degree to already grant access to a management master at home | Esprit is a private school and the Licence is professionally oriented. This is a real risk, and it is checkable in advance — look up Esprit in the UNESCO WHED database and ask Esprit whether its Licence grants access to a Tunisian management master |
+| **UvA — Data Science and Business Analytics** | *"A Bachelor's degree from a University of Applied Sciences will not be taken into consideration."* | Whether a private Tunisian Licence is read as academic or applied is decisive, and the page gives no way to tell in advance |
+
+## Bridging routes — a year, or a wall
+
+| Institution / programme | What happens to a BI licence holder |
+|---|---|
+| **Maastricht — MA Media Studies: Digital Cultures** | Direct entry restricted to media, communications, film/TV, history, social science, humanities or liberal arts. Business Intelligence is not on the list; the page routes exactly this case through a **full pre-master year** |
+| **Ghent — MSc Business Engineering** | Six learning paths totalling **157 ECTS**, including 21 ECTS technical/technological and 18 ECTS informatics. A BI licence will likely miss the technical path, triggering a preparatory programme of **45–90 ECTS**. GMAT/GRE is **mandatory** for non-EEA: no score, no academic admission |
+| **KU Leuven — Master of Business Engineering** | Subject minima of 36/45/6 ECTS. **The fallback preparatory programme is Dutch-taught only** — so a shortfall here is a rejection, not a bridge |
+| **Tilburg — Business Analytics and Operations Research** | Mathematics benchmarked at real-analysis and mathematical-statistics level; pre-Master up to **36 ECTS** |
+| **Tilburg — Marketing Analytics** | Needs 12 ECTS specifically in Marketing, Marketing Research or Consumer Behavior; pre-Master up to 30 ECTS |
+| **JADS — Data Science in Business and Entrepreneurship** | Direct entry needs 15 EC maths and statistics **plus** databases, data structures and algorithms, programming and ML. Meeting only the 15 EC routes you through the JADS pre-Master |
+
+## One that may reject you for being too technical
+
+**Tilburg — Data Science and Society** states it is *"not a good fit for students who
+have completed a program in which data science techniques have already been
+extensively covered."* A Business Intelligence degree plausibly falls foul of this,
+which is the opposite of every other risk on this page.
+
+## Unresolved in Benelux
+
+- **RSM — MScBA Business Analytics and Management.** RSM's binding per-country degree
+  requirements sit behind a client-side filter that renders nothing to a scraper. **The
+  Tunisia entry could not be retrieved.** RSM also notes that September 2027
+  requirements are still being finalised (final 1 October 2026), so this needs checking
+  after that date regardless.
+- **Maastricht BISS.** The portfolio alternative to GMAT/GRE is open only to applicants
+  from AACSB- or EQUIS-accredited institutions. If Esprit holds neither, GMAT/GRE is
+  unavoidable.
+- **EUR — Media and Business.** The widely-quoted "15 EC media and communication" floor
+  applies only to internal ESHCC students, not to external applicants. Whether a BI
+  Licence reads as "social sciences or humanities" is undecided on the page.
+- **IAD (Belgium).** The full official programme guide contains **no** credit figure.
+  The French-Community 180-credit decree would apply in principle, but IAD does not
+  state it.
