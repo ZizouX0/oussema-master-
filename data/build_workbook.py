@@ -65,6 +65,24 @@ def two_year(r):
     return "unknown"
 
 
+def entry_band(r):
+    """Bucket the admission requirement against the applicant's own 180 ECTS.
+
+    The whole dataset exists for one person holding exactly 180 ECTS, so the only
+    question that matters per row is whether the bar sits above, at, or below that.
+    """
+    v = (r.get("min_prior_ects") or "").strip()
+    m = re.match(r"(\d+)", v)
+    if not m:
+        return "4. not published"
+    n = int(m.group(1))
+    if n > 180:
+        return f"3. ABOVE 180 ({n}) - blocked or bridging"
+    if n == 180:
+        return "2. EXACTLY 180 - fits your licence"
+    return f"1. UNDER 180 ({n}) - comfortably fits"
+
+
 def style_sheet(ws, ncols, nrows, widths, wrap_cols=(), freeze="A2"):
     for i, w in enumerate(widths, start=1):
         ws.column_dimensions[get_column_letter(i)].width = w
@@ -103,6 +121,15 @@ readme = [
     ("THE SHEETS", 12, True),
     ("Shortlist — start here. 15 Track A + 15 Track B chosen for fit to your actual profile.", 10, False),
     ("Programmes — all 181. Filter by track, country, language, 2-year flag, 3-year-bachelor acceptance.", 10, False),
+    ("", 11, False),
+    ("THE FILTER TO USE FIRST: 'ENTRY ECTS BAND'", 12, True),
+    ("You hold 180 ECTS. That column sorts every programme against exactly that, into four groups:", 10, False),
+    ("   1. UNDER 180 — the entry bar is below your licence. Comfortably fits.", 10, False),
+    ("   2. EXACTLY 180 — the entry bar is your licence. Fits.", 10, False),
+    ("   3. ABOVE 180 (210 or 240) — you are blocked, or need bridging credits. Read the "
+     "'Entry requirement' column on these rows before writing them off; some allow make-up credits, one does not.", 10, False),
+    ("   4. not published — the institution states no credit figure. Read the 'Entry requirement' column: "
+     "most of these state a level or a subject rule instead, which is the real bar.", 10, False),
     ("Funding — all 103 schemes. Filter 'Tunisia eligible' to yes.", 10, False),
     ("Deadlines — every dated deadline, chronological. Filter by status to see only live ones.", 10, False),
     ("Actions — the 6 things to do first, then the full follow-up queue with named contacts.", 10, False),
@@ -125,9 +152,9 @@ for i, (text, size, bold) in enumerate(readme, start=1):
     c.font = Font(size=size, bold=bold, color=INK)
     c.alignment = Alignment(wrap_text=True, vertical="top")
 ws.column_dimensions["A"].width = 118
-for i in (1, 4, 8, 16, 21):
+for i in (1, 4, 8, 15, 24, 29):
     ws.row_dimensions[i].height = 24
-for i in (22, 23, 24):
+for i in (19, 20, 30, 31, 32):
     ws.row_dimensions[i].height = 30
 
 # --------------------------------------------------------------- Programmes
@@ -141,6 +168,7 @@ P_COLS = [
     ("_tuition_num", "Tuition EUR (sortable)", 13),
     ("tuition_non_eu_per_year", "Tuition, non-EU, as published", 30),
     ("app_deadline_non_eu", "Deadline (non-EU)", 15),
+    ("_band", "ENTRY ECTS BAND (filter me)", 24),
     ("min_prior_ects", "Min prior ECTS", 10),
     ("accepts_3yr_bachelor", "Accepts 3-yr bachelor", 12),
     ("english_req", "English requirement", 24), ("other_tests", "Other tests", 14),
@@ -157,6 +185,7 @@ ws.append([c[1] for c in P_COLS])
 for r in progs:
     r["_2yr"] = two_year(r)
     r["_tuition_num"] = eur(r.get("tuition_non_eu_per_year"))
+    r["_band"] = entry_band(r)
     ws.append([r.get(c[0]) for c in P_COLS])
 style_sheet(ws, len(P_COLS), len(progs), [c[2] for c in P_COLS],
             wrap_cols={6, 7, 13, 17, 20, 21, 24})
@@ -171,6 +200,10 @@ for row in range(2, len(progs) + 2):
         fill = fill_map.get(str(cell.value))
         if fill:
             cell.fill = fill
+    band = ws.cell(row=row, column=idx["_band"])
+    v = str(band.value)
+    band.fill = (RED if v.startswith("3.") else
+                 GREEN if v.startswith(("1.", "2.")) else GREY)
     for key in ("programme_url", "tuition_source_url", "entry_requirement_source_url"):
         cell = ws.cell(row=row, column=idx[key])
         if isinstance(cell.value, str) and cell.value.startswith("http"):
